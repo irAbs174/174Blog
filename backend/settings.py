@@ -100,6 +100,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Directory for project-level static files
+STATICFILES_DIRS = [
+    BASE_DIR / "frontend/static",
+]
+
+# Directory where collectstatic will gather files (for production)
+# STATIC_ROOT = BASE_DIR / "staticfiles"
+
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
