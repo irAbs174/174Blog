@@ -1,4 +1,8 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html', {'title': 'OK LETS GO ...'})
+    content = {
+        'title':'174 Blog',
+        'meta': 'simple blog with django and directus'
+    }
+    return render(request, 'index.html', content)
