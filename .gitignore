@@ -1,5 +1,6 @@
-env
-SEC
+__pycache__/*
+migrations/*
+staticfiles/*
 db.sqlite3
-__pycache__
-migrations
+SEC
+env
