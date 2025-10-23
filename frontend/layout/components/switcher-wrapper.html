@@ -1,0 +1,346 @@
+{% load static %}
+<div class="horizontalMenucontainer">
+<div class="switcher-wrapper">
+    <div class="demo_changer">
+        <div class="form_holder sidebar-right1 ps ps__rtl ps--active-y">
+            <div class="row">
+                <div class="predefined_styles">
+                    <div class="swichermainleft">
+                        <h4>حالت پیمایش</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">منوی افقی</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch34" name="onoffswitch15" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch34"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">منوی عمودی کلیکی</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch35" name="onoffswitch15" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch35"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">منوی عمودی با هاور</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch111" name="onoffswitch15" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch111"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت چپ چین / راست چین</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">حالت چپ چین</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch23" name="onoffswitch7" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch23"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">حالت راست چین</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch24" name="onoffswitch7" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch24"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت روشن قالب</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">قالب روشن</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch1" name="onoffswitch1" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch1"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">رنگ اصلی در روشن</span>
+                                    <div class="">
+                                        <input class="w-30p h-30 input-color-picker color-primary-light" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id7="transparentcolor" id="colorID" name="lightPrimary" oninput="changePrimaryColor()" type="color" value="#6c5ffc">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت تیره قالب</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">قالب تیره</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch2" name="onoffswitch1" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch2"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">رنگ اصلی در تیره</span>
+                                    <div class="">
+                                        <input class="w-30p h-30 input-dark-color-picker color-primary-dark" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id3="primary" data-id8="transparentcolor" id="darkPrimaryColorID" name="darkPrimary" oninput="darkPrimaryColor()" type="color" value="#6c5ffc">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت شیشه ای</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">قالب شیشه ای</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitchTransparent" name="onoffswitch1" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitchTransparent"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">رنگ اصلی در حالت شیشه ای</span>
+                                    <div class="">
+                                        <input class="w-30p h-30 input-transparent-color-picker color-primary-transparent" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id3="primary" data-id4="primary" data-id9="transparentcolor" id="transparentPrimaryColorID" name="tranparentPrimary" oninput="transparentPrimaryColor()" type="color" value="#6c5ffc">
+                                    </div>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">پس زمینه حالت شیشه ای</span>
+                                    <div class="">
+                                        <input class="w-30p h-30 input-transparent-color-picker color-bg-transparent" data-id5="body" data-id6="theme" data-id9="transparentcolor" id="transparentBgColorID" name="transparentBackground" oninput="transparentBgColor()" type="color" value="#6c5ffc">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت پس زمینه شیشه ای</h4>
+                        <div class="skin-body switch_section">
+                            <div class="switch-toggle d-flex">
+                                <span class="me-auto">تصویر زمینه اصلی </span>
+                                <div class="">
+                                    <input class="w-30p h-30 input-transparent-color-picker color-primary-transparent" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id3="primary" data-id4="primary" data-id9="transparentcolor" id="transparentBgImgPrimaryColorID" name="tranparentPrimary" oninput="transparentBgImgPrimaryColor()" type="color" value="#6c5ffc">
+                                </div>
+                            </div>
+                            <div class="switch-toggle d-flex mt-2">
+                                <a class="bg-img1" href="javascript:void(0);" onclick="bgImage(this)"><img alt="Bg-Image" id="bgimage1" src="{% static '' %}/images/media/bg-img1.jpg"></a>
+                                <a class="bg-img2" href="javascript:void(0);" onclick="bgImage(this)"><img alt="Bg-Image" id="bgimage2" src="{% static '' %}/images/media/bg-img2.jpg"></a>
+                                <a class="bg-img3" href="javascript:void(0);" onclick="bgImage(this)"><img alt="Bg-Image" id="bgimage3" src="{% static '' %}/images/media/bg-img3.jpg"></a>
+                                <a class="bg-img4" href="javascript:void(0);" onclick="bgImage(this)"><img alt="Bg-Image" id="bgimage4" src="{% static '' %}/images/media/bg-img4.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت منو</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle lightMenu d-flex">
+                                    <span class="me-auto">منو روشن</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch3" name="onoffswitch2" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch3"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle colorMenu d-flex mt-2">
+                                    <span class="me-auto">رنگ منو</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch4" name="onoffswitch2" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch4"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle darkMenu d-flex mt-2">
+                                    <span class="me-auto">منو تیره</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch5" name="onoffswitch2" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch5"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle gradientMenu d-flex mt-2">
+                                    <span class="me-auto">منو گرادیانت</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch19" name="onoffswitch2" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch19"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت سربرگ</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle lightHeader d-flex">
+                                    <span class="me-auto">سربرگ روشن</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch6" name="onoffswitch3" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch6"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle  colorHeader d-flex mt-2">
+                                    <span class="me-auto">سربرگ رنگی</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch7" name="onoffswitch3" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch7"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle darkHeader d-flex mt-2">
+                                    <span class="me-auto">سربرگ تیره</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch8" name="onoffswitch3" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch8"></label>
+                                    </p>
+                                </div>
+
+                                <div class="switch-toggle darkHeader d-flex mt-2">
+                                    <span class="me-auto">سربرگ گرادیانت</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch20" name="onoffswitch3" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch20"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>حالت های عرض محتوا</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">تمام عرض</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch9" name="onoffswitch4" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch9"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">جعبه ای</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch10" name="onoffswitch4" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch10"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>موقعیت های چیدمان</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">ثابت</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox" id="myonoffswitch11" name="onoffswitch5" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch11"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">قابل اسکرول</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch12" name="onoffswitch5" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch12"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft leftmenu-styles">
+                        <h4>حالت های منوی کناری</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">منوی پیشفرض</span>
+                                    <p class="onoffswitch2"><input checked="" class="onoffswitch2-checkbox default-menu" id="myonoffswitch13" name="onoffswitch6" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch13"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">آیکن با متن</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch14" name="onoffswitch6" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch14"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">فقط آیکن</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch15" name="onoffswitch6" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch15"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">حالت بسته</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch16" name="onoffswitch6" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch16"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">نمایش زیرمنو با هاور</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch17" name="onoffswitch6" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch17"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">نمایش زیرمنو با هاور 2</span>
+                                    <p class="onoffswitch2"><input class="onoffswitch2-checkbox" id="myonoffswitch18" name="onoffswitch6" type="radio">
+                                        <label class="onoffswitch2-label" for="myonoffswitch18"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>فونت قالب </h4>
+                        <div class="skin-body mb-3">
+                            <label class="text-start d-block px-3" for="font-changer"> ( اعداد فارسی ) </label>
+                            <select class="form-control form-select" id="font-changer" name="font-changer">
+                                <option value="iran-yekan">ایران یکان</option>
+                                <option value="iran-sans">ایران سنس</option>
+                                <option value="aviny">آوینی</option>
+                                <option value="azarmehr">آذرمهر</option>
+                                <option value="damavand">دماوند</option>
+                                <option value="dastnevis">دست نویس</option>
+                                <option value="dubai">دوبی</option>
+                                <option value="estedad">استعداد</option>
+                                <option value="helvetica-neue">هلوتیکا</option>
+                                <option value="lalezar">لاله زار</option>
+                                <option value="mikhak">میخک</option>
+                                <option value="myriad">میریاد</option>
+                                <option value="noora">نورا</option>
+                                <option value="palatino-sans">پالاتینو</option>
+                                <option value="pinar">پینار</option>
+                                <option value="dana">دانا</option>
+                                <option value="sahel">ساحل</option>
+                                <option value="shabnam">شبنم</option>
+                                <option value="vanda">واندا</option>
+                                <option value="vazir">وزیر</option>
+                            </select>
+                        </div>
+
+                        <div class="skin-body">
+                            <label class="text-start d-block px-3" for="font-changer-en"> ( اعداد انگلیسی ) </label>
+                            <select class="form-control form-select" id="font-changer-en" name="font-changer">
+                                <option value="iran-yekan">ایران یکان</option>
+                                <option value="iran-sans">ایران سنس</option>
+                                <option value="aviny">آوینی</option>
+                                <option value="azarmehr">آذرمهر</option>
+                                <option value="damavand">دماوند</option>
+                                <option value="dastnevis">دست نویس</option>
+                                <option value="dubai">دوبی</option>
+                                <option value="estedad">استعداد</option>
+                                <option value="helvetica-neue">هلوتیکا</option>
+                                <option value="lalezar">لاله زار</option>
+                                <option value="mikhak">میخک</option>
+                                <option value="myriad">میریاد</option>
+                                <option value="noora">نورا</option>
+                                <option value="palatino-sans">پالاتینو</option>
+                                <option value="pinar">پینار</option>
+                                <option value="dana">دانا</option>
+                                <option value="sahel">ساحل</option>
+                                <option value="shabnam">شبنم</option>
+                                <option value="vanda">واندا</option>
+                                <option value="vazir">وزیر</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>بازنشانی همه تنظیمات</h4>
+                        <div class="skin-body">
+                            <div class="switch_section my-4">
+                                <button class="btn btn-danger btn-block" onclick="localStorage.clear();
+                                            document.querySelector('html').style = '';
+                                            names() ;
+                                            resetData() ;" type="button">بازنشانی
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 753px; left: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 266px;"></div></div></div>
+    </div>
+</div>
