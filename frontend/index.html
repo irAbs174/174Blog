@@ -8,7 +8,6 @@
 {% block TITLE %}{{ title }}{% endblock TITLE %}
 {% block CONTENT %}
 {% include 'layout/components/switcher-wrapper.html' %}
-{% include 'layout/components/loader.html' %}
 <!-- PAGE -->
 <div class="page">
     <div class="page-main">
@@ -21,9 +20,9 @@
                 <div class="main-container container-fluid">
                     {% include 'layout/components/page-header.html' %}
                     <!-- ROW-1 OPEN -->
-                    <div class="row row-cards">
+                    <div class="row row-cards post">
                         <!-- COL-END -->
-                        {% include 'layout/components/post-card.html' %}
+                        
                         <!-- ROW-1 CLOSED -->
                     </div>
                     <!-- ROW-1 END -->
@@ -37,9 +36,8 @@
 </div>
 </div>
 {% include 'layout/components/back-to-top.html' %}
-{% endblock CONTENT %}
-{% block JS %}
-<!-- JQUERY JS -->
+
+    <!-- JQUERY JS -->
 <script src="{% static '' %}/js/jquery.min.js"></script>
 <!-- BOOTSTRAP JS -->
 <script src="{% static '' %}/plugins/bootstrap/js/popper.min.js"></script>
@@ -73,4 +71,76 @@
 <script src="{% static '' %}/js/custom-swicher.js"></script>
 <!-- Switcher js -->
 <script src="{% static '' %}/switcher/js/switcher.js"></script>
-{% endblock JS %}
+
+<script>
+    let url = 'http://localhost:8000';
+    function load_posts(){
+        let uri = '/api/blog/post/list';
+        $.ajax({
+                url: url + '/' + uri,
+                method: 'POST',
+                data: {'page': 1},
+                success: function(response){
+                    console.log("=> SUCCESS! <=");
+                    console.log(response);
+                    data = response.data;
+                    $('.post').append(`
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-11" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xl-4 col-sm-6">
+                                            <div class="card">
+                                                <div class="product-grid6">
+                                                    <div class="product-image6 p-5">
+                                                        <ul class="icons">
+                                                            <li>
+                                                                <a class="btn btn-primary" href="shop-description.html">
+                                                                    <i class="fe fe-eye"> </i> </a>
+                                                            </li>
+                                                            <li><a class="btn btn-success" href="add-product.html"><i class="fe fe-edit"></i></a></li>
+                                                            <li><a class="btn btn-danger" href="javascript:void(0)"><i class="fe fe-x"></i></a></li>
+                                                        </ul>
+                                                        <a href="shop-description.html">
+                                                            <img alt="img" class="img-fluid br-7 w-100" src="${data.image}">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body pt-0">
+                                                        <div class="product-content text-center">
+                                                            <h1 class="title fw-bold fs-20"><a href="shop-description.html">${data.title}</a></h1>
+                                                            <div class="mb-2 text-warning">
+                                                                <i class="fa fa-star text-warning"></i>
+                                                                <i class="fa fa-star text-warning"></i>
+                                                                <i class="fa fa-star text-warning"></i>
+                                                                <i class="fa fa-star text-warning"></i>
+                                                                <i class="fa fa-star-o text-warning"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div>دسته بندی: <i> ${data.category}</i></div>
+                                                        <div>نویسنده: <i> ${data.writer}</i></div>
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        <button class="btn btn-outline-primary mb-1" href="${data.url}"><i class="fe fe-eye mx-2 wishlist-icon"></i>مشاهده</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COL-END -->
+                        </div>
+                    `)
+                },
+                error: function(response){
+                    console.log("=> ERROR! <=");
+                    console.log(response);
+                },
+            })
+    };
+
+    load_posts();
+
+</script>
+
+{% endblock CONTENT %}
