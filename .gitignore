@@ -1,2 +1,4 @@
 env
 SEC
+db.sqlite3
+__pycache__
