@@ -1,0 +1,20 @@
+# 📝 174Blog — Django + Directus
+
+A minimal, full-stack blog project powered by **Django (backend)** and **Directus (headless CMS)**.  
+This project demonstrates how to combine a traditional Python web framework with a modern API-driven CMS for content management and publication.
+
+---
+
+## 🚀 Features
+
+- 🧩 **Django** for backend logic, routing, and API integration  
+- 🗃️ **Directus** as a headless CMS for managing blog posts, authors, and media  
+- 🌐 REST or GraphQL API integration between Django ↔ Directus  
+- 📰 CRUD for posts, categories, and tags  
+- 👤 Author management via Directus users  
+- 📸 Image and file uploads through Directus media library  
+- 🎨 Clean, extendable codebase for quick customization  
+
+---
+
+## 🏗️ Project Structure
