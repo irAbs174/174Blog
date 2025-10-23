@@ -1,0 +1,39 @@
+{% load static %}
+<html dir="rtl" lang="fa-IR">
+    <head>
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    {% block META_DATA %}{% endblock META_DATA %}
+    <!-- FAVICON -->
+    <link href="{% static '/images/brand/favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
+
+    <!-- TITLE -->
+    <title>{% block TITLE %}{% endblock TITLE %}</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="{% static '' %}/plugins/bootstrap/css/bootstrap.rtl.min.css" id="style" rel="stylesheet">
+
+    <!-- STYLE CSS -->
+    <link href="{% static '' %}/css/style.css" rel="stylesheet">
+    <link href="{% static '' %}/css/plugins.css" rel="stylesheet">
+    <link href="{% static '' %}/css/dark-style.css" rel="stylesheet">
+    <link href="{% static '' %}/css/transparent-style.css" rel="stylesheet">
+    <link href="{% static '' %}/css/skin-modes.css" rel="stylesheet">
+
+    <!--- FONT-ICONS CSS -->
+    <link href="{% static '' %}/css/icons.css" rel="stylesheet">
+
+    <!-- COLOR SKIN CSS -->
+    <link href="{% static '' %}/switcher/css/switcher.css" rel="stylesheet">
+    <link href="{% static '' %}/switcher/demo.css" rel="stylesheet">
+    <link href="{% static '' %}/fonts/styles-fa-num/iran-yekan.css" id="fonts" rel="stylesheet">
+    <link href="{% static '' %}/css/rtl.css" rel="stylesheet">
+</head>
+
+<body class="app sidebar-mini rtl light-mode">
+    {% block CONTENT %}{% endblock CONTENT %}
+    {% block JS %}{% endblock JS %}
+</body>
+</html>
