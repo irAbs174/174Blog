@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html dir="rtl" lang="fa-IR">
 
@@ -13,30 +14,30 @@
           name="keywords">
 
     <!-- FAVICON -->
-    <link href="../assets/images/brand/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="{% static '' %}/images/brand/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 
     <!-- TITLE -->
     <title>{{ title }}</title>
 
     <!-- BOOTSTRAP CSS -->
-    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" id="style" rel="stylesheet"/>
+    <link href="{% static '' %}/plugins/bootstrap/css/bootstrap.min.css" id="style" rel="stylesheet"/>
 
     <!-- STYLE CSS -->
-    <link href="../assets/css/style.css" rel="stylesheet"/>
-    <link href="../assets/css/plugins.css" rel="stylesheet"/>
-    <link href="../assets/css/dark-style.css" rel="stylesheet"/>
-    <link href="../assets/css/transparent-style.css" rel="stylesheet">
-    <link href="../assets/css/skin-modes.css" rel="stylesheet"/>
+    <link href="{% static '' %}/css/style.css" rel="stylesheet"/>
+    <link href="{% static '' %}/css/plugins.css" rel="stylesheet"/>
+    <link href="{% static '' %}/css/dark-style.css" rel="stylesheet"/>
+    <link href="{% static '' %}/css/transparent-style.css" rel="stylesheet">
+    <link href="{% static '' %}/css/skin-modes.css" rel="stylesheet"/>
 
     <!--- FONT-ICONS CSS -->
-    <link href="../assets/css/icons.css" rel="stylesheet"/>
+    <link href="{% static '' %}/css/icons.css" rel="stylesheet"/>
 
     <!-- COLOR SKIN CSS -->
-    <link href="../assets/colors/color1.css" id="theme" media="all" rel="stylesheet" type="text/css"/>
-    <link href="../assets/switcher/css/switcher.css" rel="stylesheet"/>
-    <link href="../assets/switcher/demo.css" rel="stylesheet"/>
-    <link href="../assets/fonts/styles-fa-num/iran-yekan.css" id="fonts" rel="stylesheet">
-    <link href="../assets/css/rtl.css" rel="stylesheet"/>
+    <link href="{% static '' %}/colors/color1.css" id="theme" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{% static '' %}/switcher/css/switcher.css" rel="stylesheet"/>
+    <link href="{% static '' %}/switcher/demo.css" rel="stylesheet"/>
+    <link href="{% static '' %}/fonts/styles-fa-num/iran-yekan.css" id="fonts" rel="stylesheet">
+    <link href="{% static '' %}/css/rtl.css" rel="stylesheet"/>
 </head>
 
 <body class="app sidebar-mini rtl">
@@ -191,13 +192,13 @@
                             </div>
                             <div class="switch-toggle d-flex mt-2">
                                 <a class="bg-img1" href="javascript:void(0);" onclick="bgImage(this)"><img
-                                        alt="Bg-Image" id="bgimage1" src="../assets/images/media/bg-img1.jpg"></a>
+                                        alt="Bg-Image" id="bgimage1" src="{% static '' %}/images/media/bg-img1.jpg"></a>
                                 <a class="bg-img2" href="javascript:void(0);" onclick="bgImage(this)"><img
-                                        alt="Bg-Image" id="bgimage2" src="../assets/images/media/bg-img2.jpg"></a>
+                                        alt="Bg-Image" id="bgimage2" src="{% static '' %}/images/media/bg-img2.jpg"></a>
                                 <a class="bg-img3" href="javascript:void(0);" onclick="bgImage(this)"><img
-                                        alt="Bg-Image" id="bgimage3" src="../assets/images/media/bg-img3.jpg"></a>
+                                        alt="Bg-Image" id="bgimage3" src="{% static '' %}/images/media/bg-img3.jpg"></a>
                                 <a class="bg-img4" href="javascript:void(0);" onclick="bgImage(this)"><img
-                                        alt="Bg-Image" id="bgimage4" src="../assets/images/media/bg-img4.jpg"></a>
+                                        alt="Bg-Image" id="bgimage4" src="{% static '' %}/images/media/bg-img4.jpg"></a>
                             </div>
                         </div>
                     </div>
@@ -436,7 +437,7 @@
 </div>
 <!-- GLOBAL-LOADER -->
 <div id="global-loader">
-    <img alt="Loader" class="loader-img" src="../assets/images/loader.svg">
+    <img alt="Loader" class="loader-img" src="{% static '' %}/images/loader.svg">
 </div>
 <!-- /GLOBAL-LOADER -->
 
@@ -452,9 +453,9 @@
                        href="javascript:void(0)"></a>
                     <!-- sidebar-toggle-->
                     <a class="logo-horizontal " href="index.html">
-                        <img alt="logo" class="header-brand-img desktop-logo" src="../assets/images/brand/logo.png">
+                        <img alt="logo" class="header-brand-img desktop-logo" src="{% static '' %}/images/brand/logo.png">
                         <img alt="logo" class="header-brand-img light-logo1"
-                             src="../assets/images/brand/logo-3.png">
+                             src="{% static '' %}/images/brand/logo-3.png">
                     </a>
                     <!-- LOGO -->
                     <div class="main-header-center ms-3 d-none d-lg-block">
@@ -533,7 +534,7 @@
                                                     <a class="open-file" href="cart.html"></a>
                                                     <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src="../assets/images/pngs/4.jpg"></span>
+                                                            data-bs-image-src="{% static '' %}/images/pngs/4.jpg"></span>
                                                     <div class="wd-50p">
                                                         <h5 class="mb-1">گلدان برای دکوراسیون منزل</h5>
                                                         <span>وضعیت: <span class="text-success">در انبار</span></span>
@@ -552,7 +553,7 @@
                                                     <a class="open-file" href="cart.html"></a>
                                                     <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src="../assets/images/pngs/6.jpg"></span>
+                                                            data-bs-image-src="{% static '' %}/images/pngs/6.jpg"></span>
                                                     <div class="wd-50p">
                                                         <h5 class="mb-1">دوربین دیجیتال سیاه</h5>
                                                         <span>وضعیت: <span
@@ -572,7 +573,7 @@
                                                     <a class="open-file" href="cart.html"></a>
                                                     <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src="../assets/images/pngs/8.jpg"></span>
+                                                            data-bs-image-src="{% static '' %}/images/pngs/8.jpg"></span>
                                                     <div class="wd-50p">
                                                         <h5 class="mb-1">ایرد باد Rockerz</h5>
                                                         <span>وضعیت: <span
@@ -592,7 +593,7 @@
                                                     <a class="open-file" href="cart.html"></a>
                                                     <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src="../assets/images/pngs/1.jpg"></span>
+                                                            data-bs-image-src="{% static '' %}/images/pngs/1.jpg"></span>
                                                     <div class="wd-50p">
                                                         <h5 class="mb-1">لباس مجلسی زنانه</h5>
                                                         <span>وضعیت: <span
@@ -612,7 +613,7 @@
                                                     <a class="open-file" href="cart.html"></a>
                                                     <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src="../assets/images/pngs/3.jpg"></span>
+                                                            data-bs-image-src="{% static '' %}/images/pngs/3.jpg"></span>
                                                     <div class="wd-50p">
                                                         <h5 class="mb-1">کفش دویدن مردانه</h5>
                                                         <span>وضعیت: <span
@@ -723,7 +724,7 @@
                                                 <a class="dropdown-item d-flex" href="chat.html">
                                                         <span
                                                                 class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                                data-bs-image-src="../assets/images/users/1.jpg"></span>
+                                                                data-bs-image-src="{% static '' %}/images/users/1.jpg"></span>
                                                     <div class="wd-90p">
                                                         <div class="d-flex">
                                                             <h5 class="mb-1">پیتر جکسون</h5>
@@ -737,7 +738,7 @@
                                                 <a class="dropdown-item d-flex" href="chat.html">
                                                         <span
                                                                 class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                                data-bs-image-src="../assets/images/users/15.jpg"></span>
+                                                                data-bs-image-src="{% static '' %}/images/users/15.jpg"></span>
                                                     <div class="wd-90p">
                                                         <div class="d-flex">
                                                             <h5 class="mb-1">دارث ویدار</h5>
@@ -751,7 +752,7 @@
                                                 <a class="dropdown-item d-flex" href="chat.html">
                                                         <span
                                                                 class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                                data-bs-image-src="../assets/images/users/12.jpg"></span>
+                                                                data-bs-image-src="{% static '' %}/images/users/12.jpg"></span>
                                                     <div class="wd-90p">
                                                         <div class="d-flex">
                                                             <h5 class="mb-1">جان دوئیی</h5>
@@ -765,7 +766,7 @@
                                                 <a class="dropdown-item d-flex" href="chat.html">
                                                         <span
                                                                 class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                                data-bs-image-src="../assets/images/users/4.jpg"></span>
+                                                                data-bs-image-src="{% static '' %}/images/users/4.jpg"></span>
                                                     <div class="wd-90p">
                                                         <div class="d-flex">
                                                             <h5 class="mb-1">ریچل شاو</h5>
@@ -779,7 +780,7 @@
                                                 <a class="dropdown-item d-flex" href="chat.html">
                                                         <span
                                                                 class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                                data-bs-image-src="../assets/images/users/3.jpg"></span>
+                                                                data-bs-image-src="{% static '' %}/images/users/3.jpg"></span>
                                                     <div class="wd-90p">
                                                         <div class="d-flex">
                                                             <h5 class="mb-1">جان دویی</h5>
@@ -809,7 +810,7 @@
                                         <a class="nav-link leading-none d-flex" data-bs-toggle="dropdown"
                                            href="javascript:void(0)">
                                             <img alt="profile-user" class="avatar  profile-user brround cover-image"
-                                                 src="../assets/images/users/21.jpg">
+                                                 src="{% static '' %}/images/users/21.jpg">
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                             <div class="drop-heading">
@@ -852,10 +853,10 @@
             <div class="app-sidebar">
                 <div class="side-header">
                     <a class="header-brand1" href="index.html">
-                        <img alt="logo" class="header-brand-img desktop-logo" src="../assets/images/brand/logo.png">
-                        <img alt="logo" class="header-brand-img toggle-logo" src="../assets/images/brand/logo-1.png">
-                        <img alt="logo" class="header-brand-img light-logo" src="../assets/images/brand/logo-2.png">
-                        <img alt="logo" class="header-brand-img light-logo1" src="../assets/images/brand/logo-3.png">
+                        <img alt="logo" class="header-brand-img desktop-logo" src="{% static '' %}/images/brand/logo.png">
+                        <img alt="logo" class="header-brand-img toggle-logo" src="{% static '' %}/images/brand/logo-1.png">
+                        <img alt="logo" class="header-brand-img light-logo" src="{% static '' %}/images/brand/logo-2.png">
+                        <img alt="logo" class="header-brand-img light-logo1" src="{% static '' %}/images/brand/logo-3.png">
                     </a>
                     <!-- LOGO -->
                 </div>
@@ -1409,7 +1410,7 @@
                                             <div class="">
                                                 <div class="d-flex overflow-visible">
                                                     <img alt="avatar-img"
-                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="../assets/images/pngs/8.png">
+                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="{% static '' %}/images/pngs/8.png">
                                                     <div class="media-body valign-middle">
                                                         <a class="fw-semibold text-dark" href="javascript:void(0)">کیف
                                                             دستی</a>
@@ -1425,7 +1426,7 @@
                                                 </div>
                                                 <div class="d-flex overflow-visible mt-5">
                                                     <img alt="avatar-img"
-                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="../assets/images/pngs/5.png">
+                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="{% static '' %}/images/pngs/5.png">
                                                     <div class="media-body valign-middle">
                                                         <a class="fw-semibold text-dark"
                                                            href="javascript:void(0)">صندلی</a>
@@ -1441,7 +1442,7 @@
                                                 </div>
                                                 <div class="d-flex overflow-visible mt-5">
                                                     <img alt="avatar-img"
-                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="../assets/images/pngs/1.png">
+                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="{% static '' %}/images/pngs/1.png">
                                                     <div class="media-body valign-middle">
                                                         <a class="fw-semibold text-dark" href="javascript:void(0)">کیف
                                                             لپتاپ</a>
@@ -1457,7 +1458,7 @@
                                                 </div>
                                                 <div class="d-flex overflow-visible mt-5">
                                                     <img alt="avatar-img"
-                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="../assets/images/pngs/6.png">
+                                                         class="avatar bradius avatar-xl me-4 p-2 bg-white border" src="{% static '' %}/images/pngs/6.png">
                                                     <div class="media-body valign-middle">
                                                         <a class="fw-semibold text-dark"
                                                            href="javascript:void(0)">ساعت</a>
@@ -1532,7 +1533,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/9.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/9.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1577,7 +1578,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/10.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/10.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1622,7 +1623,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/4.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/4.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1666,7 +1667,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/8.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/8.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1710,7 +1711,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/1.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/1.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1754,7 +1755,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/6.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/6.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1798,7 +1799,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/5.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/5.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1842,7 +1843,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/7.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/7.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1887,7 +1888,7 @@
                                                         </ul>
                                                         <a href="shop-description.html">
                                                             <img alt="img"
-                                                                 class="img-fluid br-7 w-100" src="../assets/images/pngs/3.jpg">
+                                                                 class="img-fluid br-7 w-100" src="{% static '' %}/images/pngs/3.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="card-body pt-0">
@@ -1965,7 +1966,7 @@
                                                                 <div class="br-be-0 br-te-0">
                                                                     <a class="" href="shop-description.html">
                                                                         <img alt="img" class="cover-image br-7 w-100"
-                                                                             src="../assets/images/pngs/9.jpg">
+                                                                             src="{% static '' %}/images/pngs/9.jpg">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -2061,7 +2062,7 @@
                                                                 <div class="br-be-0 br-te-0">
                                                                     <a class="" href="shop-description.html">
                                                                         <img alt="img"
-                                                                             class="cover-image br-7 w-100" src="../assets/images/pngs/10.jpg">
+                                                                             class="cover-image br-7 w-100" src="{% static '' %}/images/pngs/10.jpg">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -2156,7 +2157,7 @@
                                                                 <div class="br-be-0 br-te-0">
                                                                     <a class="" href="shop-description.html">
                                                                         <img alt="img" class="cover-image br-7 w-100"
-                                                                             src="../assets/images/pngs/8.jpg">
+                                                                             src="{% static '' %}/images/pngs/8.jpg">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -2250,7 +2251,7 @@
                                                                 <div class="br-be-0 br-te-0">
                                                                     <a class="" href="shop-description.html">
                                                                         <img alt="img" class="cover-image br-7 w-100"
-                                                                             src="../assets/images/pngs/4.jpg">
+                                                                             src="{% static '' %}/images/pngs/4.jpg">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -2344,7 +2345,7 @@
                                                                 <div class="br-be-0 br-te-0">
                                                                     <a class="" href="shop-description.html">
                                                                         <img alt="img" class="cover-image br-7 w-100"
-                                                                             src="../assets/images/pngs/3.jpg">
+                                                                             src="{% static '' %}/images/pngs/3.jpg">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -2665,7 +2666,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/2.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/2.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2679,7 +2680,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/11.jpg"><span
+                                              data-bs-image-src="{% static '' %}/images/users/11.jpg"><span
                                                 class="avatar-status bg-success"></span></span>
                                 </div>
                                 <div class="">
@@ -2694,7 +2695,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/10.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/10.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2709,7 +2710,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/13.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/13.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2723,7 +2724,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/12.jpg"><span
+                                              data-bs-image-src="{% static '' %}/images/users/12.jpg"><span
                                                 class="avatar-status bg-success"></span></span>
                                 </div>
                                 <div class="">
@@ -2738,7 +2739,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/15.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/15.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2753,7 +2754,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/4.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/4.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2768,7 +2769,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/11.jpg"><span
+                                              data-bs-image-src="{% static '' %}/images/users/11.jpg"><span
                                                 class="avatar-status bg-success"></span></span>
                                 </div>
                                 <div class="">
@@ -2783,7 +2784,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/10.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/10.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2798,7 +2799,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/13.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/13.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2812,7 +2813,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/12.jpg"><span
+                                              data-bs-image-src="{% static '' %}/images/users/12.jpg"><span
                                                 class="avatar-status bg-success"></span></span>
                                 </div>
                                 <div class="">
@@ -2827,7 +2828,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/15.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/15.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2842,7 +2843,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                              data-bs-image-src="../assets/images/users/4.jpg"></span>
+                                              data-bs-image-src="{% static '' %}/images/users/4.jpg"></span>
                                 </div>
                                 <div class="">
                                     <a href="chat.html">
@@ -2969,68 +2970,68 @@
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block active" href="javascript:void(0)">
                                     <span class="country-selector"><img alt="" class="me-3 language"
-                                                                        src="../assets/images/flags/us_flag.jpg"></span>ایالات متحده آمریکا
+                                                                        src="{% static '' %}/images/flags/us_flag.jpg"></span>ایالات متحده آمریکا
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/italy_flag.jpg"></span>ایتالیا
+                                                                        src="{% static '' %}/images/flags/italy_flag.jpg"></span>ایتالیا
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/spain_flag.jpg"></span>اسپانیا
+                                                                        src="{% static '' %}/images/flags/spain_flag.jpg"></span>اسپانیا
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/india_flag.jpg"></span>هند
+                                                                        src="{% static '' %}/images/flags/india_flag.jpg"></span>هند
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/french_flag.jpg"></span>فرانسوی
+                                                                        src="{% static '' %}/images/flags/french_flag.jpg"></span>فرانسوی
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/russia_flag.jpg"></span>روسیه
+                                                                        src="{% static '' %}/images/flags/russia_flag.jpg"></span>روسیه
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/germany_flag.jpg"></span>آلمان
+                                                                        src="{% static '' %}/images/flags/germany_flag.jpg"></span>آلمان
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt=""
                                                                         class="me-3 language"
-                                                                        src="../assets/images/flags/argentina.jpg"></span>آرژانتین
+                                                                        src="{% static '' %}/images/flags/argentina.jpg"></span>آرژانتین
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt="" class="me-3 language"
-                                                                        src="../assets/images/flags/malaysia.jpg"></span>مالزی
+                                                                        src="{% static '' %}/images/flags/malaysia.jpg"></span>مالزی
                             </a>
                         </li>
                         <li class="col-lg-6 mb-2">
                             <a class="btn btn-country btn-lg btn-block" href="javascript:void(0)">
                                     <span class="country-selector"><img alt="" class="me-3 language"
-                                                                        src="../assets/images/flags/turkey.jpg"></span>ترکیه
+                                                                        src="{% static '' %}/images/flags/turkey.jpg"></span>ترکیه
                             </a>
                         </li>
                     </ul>
@@ -3059,52 +3060,52 @@
 <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- JQUERY JS -->
-<script src="../assets/js/jquery.min.js"></script>
+<script src="{% static '' %}/js/jquery.min.js"></script>
 
 <!-- BOOTSTRAP JS -->
-<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="{% static '' %}/plugins/bootstrap/js/popper.min.js"></script>
+<script src="{% static '' %}/plugins/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- INPUT MASK JS-->
-<script src="../assets/plugins/input-mask/jquery.mask.min.js"></script>
+<script src="{% static '' %}/plugins/input-mask/jquery.mask.min.js"></script>
 
 <!-- Ion.RangeSlider js-->
-<script src="../assets/plugins/jquery-uislider/jquery-ui.js"></script>
-<script src="../assets/js/slider.js"></script>
+<script src="{% static '' %}/plugins/jquery-uislider/jquery-ui.js"></script>
+<script src="{% static '' %}/js/slider.js"></script>
 
 <!-- TypeHead js -->
-<script src="../assets/plugins/bootstrap5-typehead/autocomplete.js"></script>
-<script src="../assets/js/typehead.js"></script>
+<script src="{% static '' %}/plugins/bootstrap5-typehead/autocomplete.js"></script>
+<script src="{% static '' %}/js/typehead.js"></script>
 
 <!-- INTERNAL SELECT2 JS -->
-<script src="../assets/plugins/select2/select2.full.min.js"></script>
-<script src="../assets/js/select2.js"></script>
+<script src="{% static '' %}/plugins/select2/select2.full.min.js"></script>
+<script src="{% static '' %}/js/select2.js"></script>
 
 <!-- Perfect SCROLLBAR JS-->
-<script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
-<script src="../assets/plugins/p-scroll/pscroll.js"></script>
-<script src="../assets/plugins/p-scroll/pscroll-1.js"></script>
+<script src="{% static '' %}/plugins/p-scroll/perfect-scrollbar.js"></script>
+<script src="{% static '' %}/plugins/p-scroll/pscroll.js"></script>
+<script src="{% static '' %}/plugins/p-scroll/pscroll-1.js"></script>
 
 <!-- SIDE-MENU JS -->
-<script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+<script src="{% static '' %}/plugins/sidemenu/sidemenu.js"></script>
 
 <!-- SIDEBAR JS -->
-<script src="../assets/plugins/sidebar/sidebar.js"></script>
+<script src="{% static '' %}/plugins/sidebar/sidebar.js"></script>
 
 <!-- Color Theme js -->
-<script src="../assets/js/themeColors.js"></script>
+<script src="{% static '' %}/js/themeColors.js"></script>
 
 <!-- Sticky js -->
-<script src="../assets/js/sticky.js"></script>
+<script src="{% static '' %}/js/sticky.js"></script>
 
 <!-- CUSTOM JS -->
-<script src="../assets/js/custom.js"></script>
+<script src="{% static '' %}/js/custom.js"></script>
 
 <!-- Custom-switcher -->
-<script src="../assets/js/custom-swicher.js"></script>
+<script src="{% static '' %}/js/custom-swicher.js"></script>
 
 <!-- Switcher js -->
-<script src="../assets/switcher/js/switcher.js"></script>
+<script src="{% static '' %}/switcher/js/switcher.js"></script>
 
 </body>
 
