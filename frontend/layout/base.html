@@ -33,7 +33,13 @@
 </head>
 
 <body class="app sidebar-mini rtl light-mode">
+    
+        <!-- GLOBAL-LOADER -->
+        <div id="global-loader">
+            <img alt="Loader" class="loader-img" src="{% static '' %}/images/loader.svg">
+        </div>
+        <!-- /GLOBAL-LOADER -->
+
     {% block CONTENT %}{% endblock CONTENT %}
-    {% block JS %}{% endblock JS %}
 </body>
 </html>
