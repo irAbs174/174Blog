@@ -76,6 +76,12 @@
 <script src="{% static '' %}/switcher/js/switcher.js"></script>
 
 <script>
+    // PAGE LOADING
+    $(window).on("load", function (e) {
+        $("#global-loader").fadeOut("slow");
+        load_posts();
+    })
+
     let content_api = 'http://localhost:8000';
     let assets_api = 'https://strange-kare-ive7vog0s.liara.run/assets';
     let menu_uri = 'api/menu/list'
@@ -131,7 +137,6 @@
                 },
             })
     };
-    load_posts();
 
 </script>
 
