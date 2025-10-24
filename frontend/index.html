@@ -76,11 +76,13 @@
 <script src="{% static '' %}/switcher/js/switcher.js"></script>
 
 <script>
-    let url = 'http://localhost:8000';
+    let content_api = 'http://localhost:8000';
+    let assets_api = 'https://strange-kare-ive7vog0s.liara.run/assets';
+
     function load_posts(){
-        let uri = '/api/blog/post/list';
+        let uri = 'api/blog/post/list';
         $.ajax({
-                url: url + '/' + uri,
+                url: `${content_api}/${uri}`,
                 method: 'POST',
                 data: {'page': 1},
                 success: function(response){
@@ -101,7 +103,7 @@
                                                                 <li><a class="btn btn-danger" href="javascript:void(0)"><i class="fe fe-x"></i></a></li>
                                                             </ul>
                                                             <a href="shop-description.html">
-                                                                <img alt="img" class="img-fluid br-7 w-100" src="${data[i].image}">
+                                                                <img alt="img" class="img-fluid br-7 w-100" src="${assets_api}/${data[i].image}">
                                                             </a>
                                                         </div>
                                                         <div class="card-body pt-0">
@@ -119,7 +121,7 @@
                                                             <div>نویسنده: <i> ${data[i].writer}</i></div>
                                                         </div>
                                                         <div class="card-footer text-center">
-                                                            <button class="btn btn-outline-primary mb-1" href="${data[i].url}"><i class="fe fe-eye mx-2 wishlist-icon"></i>مشاهده</button>
+                                                            <a class="btn btn-outline-primary mb-1" href="/${data[i].category}/${data[i].sku}"><i class="fe fe-eye mx-2 wishlist-icon"></i>مشاهده</a>
                                                         </div>
                                                     </div>
                                                 </div>

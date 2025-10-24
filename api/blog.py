@@ -1,24 +1,11 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+import requests
 
 @csrf_exempt
 def post_list(request):
+    data = requests.get('https://strange-kare-ive7vog0s.liara.run/items/posts').json()['data']
     return JsonResponse({
         'success': True,
-        'data': [
-            {
-                'title':'هک اخلاقی',
-                'image':'/static/images/pngs/4.jpg',
-                'category': 'علمی تخیلی',
-                'writer':'عباس دمرچی',
-                'url':'/'
-                },
-            {
-                'title':'دوره سلامتی',
-                'image':'/static/images/pngs/5.jpg',
-                'category': 'علمی جنایی',
-                'writer':'عباس دمرچی',
-                'url':'/'
-            }
-        ]
+        'data':data
     })
