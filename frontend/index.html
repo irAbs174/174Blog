@@ -79,34 +79,6 @@
     let content_api = 'http://localhost:8000';
     let assets_api = 'https://strange-kare-ive7vog0s.liara.run/assets';
     let menu_uri = 'api/menu/list'
-
-    function load_menu(){
-                $.ajax({
-            url: `${content_api}/${menu_uri}`,
-            method: 'POST',
-            success: function(res){
-                let data = res.data;
-                for (let x = 0; x <= data.length; x++){
-                    $('.side-menu').append(`
-                        <li class="slide is-expanded">
-                            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
-                                <i class="side-menu__icon fe fe-slack"></i>
-                                <span class="side-menu__label">${data[x].title}</span>
-                                <i class="angle fe fe-chevron-right"></i>
-                            </a>
-                            <ul class="slide-menu" style="display: block;">
-                            </ul>
-                        </li>
-                    `);
-                    for (let s = 0; s <= data[x].children.length; s++){
-                        $('.slide-menu').append(`
-                                <li><a class="slide-item" href="${data[x].children[s].url}">${data[x].children[s].title}</a></li>
-                        `)
-                    }
-                };
-            },
-        });
-    }
     
     function load_posts(){
         let uri = 'api/blog/post/list';
@@ -159,7 +131,6 @@
                 },
             })
     };
-    load_menu();
     load_posts();
 
 </script>
